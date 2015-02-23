@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
-  get 'about_us/contact'
 
-  get 'about_us/gallery'
+  get 'o_nas'   => 'static_pages#about_us'
+  get 'kontakt' => 'static_pages#contact'
+  get 'galeria' => 'static_pages#gallery'
 
   root 'welcome#index'
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
