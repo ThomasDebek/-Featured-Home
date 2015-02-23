@@ -1,0 +1,20 @@
+
+pl:
+
+
+
+  helpers:
+    actions: "Akcje"
+    links:
+      back: "Powrót"
+      edit: "Edycja"
+      cancel: "Wróć"
+      confirm: "Jesteś pewien?"
+      destroy: "Usuń"
+      new: "Nowa"
+    titles:
+      edit: "Edycja"
+      save: "Zapisz"
+      new: "Nowa"
+      delete: "Usuń"
+
