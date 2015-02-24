@@ -29,7 +29,7 @@
   }
 
   .featurette-heading {
-    margin-top: 40px;
+    margin-top: 2px;
   }
 
 }
@@ -39,8 +39,6 @@
   .body {
     height: 1000px;
   }
-
-
 
   background: linear-gradient(#38434F, #677380) repeat scroll 0% 0% transparent;
 
@@ -55,7 +53,18 @@
   }
 
 
+  #about {
+    margin: auto;
+    text-align: left;
+    h3 {
+      text-align:  center;
+    }
+  }
 }
+
+
+
+
 
 
 @import "bootstrap-sprockets";
