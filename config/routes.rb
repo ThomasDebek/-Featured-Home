@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+
+
+  namespace :admin do
+    resources :photos
+  end
+
+
+  resources :photos
+
+
   get 'o_nas'   => 'static_pages#about_us'
   get 'kontakt' => 'static_pages#contact'
   get 'galeria' => 'static_pages#gallery'

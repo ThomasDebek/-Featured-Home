@@ -1,11 +1,20 @@
-// Place all the styles related to the Welcome controller here.
+// Place all the styles related to the Photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.welcome {
-  background: linear-gradient(#38434F, #677380) repeat scroll 0% 0% transparent;
 
+
+.photos {
+  width: auto;
+  height: 1100px;
+  font-size: medium;
+
+  .body {
+    height: 1000px;
+  }
+
+  background: linear-gradient(#38434F, #677380) repeat scroll 0% 10% transparent;
 
   .navbar-nav {
     float: right;
@@ -17,9 +26,5 @@
     border-color: #090909;
   }
 
-  .featurette-heading {
-    margin-top: 2px;
-  }
 
 }
-

@@ -3,13 +3,46 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+/*.static_pages {
+
+
+  #about {
+    text-align: center;
+    color: #9D9D9D;
+  }
+}
+*/
+
+
+
 .static_pages {
   width: auto;
   height: 1100px;
   font-size: medium;
 
+  .body {
+    height: 1000px;
+  }
+
+  background: linear-gradient(#38434F, #677380) repeat scroll 0% 0% transparent;
+
+  .navbar-nav {
+    float: right;
+    margin-right: 30px;
+  }
+
+  .navbar-inverse {
+    background-color: transparent;
+    border-color: #090909;
+  }
+
+
   #about {
-    text-align: center;
-    color: #9D9D9D;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 200px;
+    h3 {
+      text-align:  center;
+    }
   }
 }
