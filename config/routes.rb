@@ -7,7 +7,10 @@ Rails.application.routes.draw do
   end
 
 
-  resources :photos
+
+  get 'photo' => 'photos#show'
+  get 'photos' => 'photos#index'
+
 
 
   get 'o_nas'   => 'static_pages#about_us'

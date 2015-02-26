@@ -14,6 +14,52 @@
  *= require_self
  */
 
+ HEAD
+
+.welcome {
+  background: linear-gradient(#38434F, #677380) repeat scroll 0% 0% transparent;
+
+
+  .navbar-nav {
+    float: right;
+    margin-right: 30px;
+  }
+
+  .navbar-inverse {
+      background-color: transparent;
+      border-color: #090909;
+  }
+
+  .featurette-heading {
+    margin-top: 40px;
+  }
+
+}
+
+
+.static_pages {
+  .body {
+    height: 1000px;
+  }
+
+
+
+  background: linear-gradient(#38434F, #677380) repeat scroll 0% 0% transparent;
+
+  .navbar-nav {
+    float: right;
+    margin-right: 30px;
+  }
+
+  .navbar-inverse {
+    background-color: transparent;
+    border-color: #090909;
+  }
+
+
+}
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
