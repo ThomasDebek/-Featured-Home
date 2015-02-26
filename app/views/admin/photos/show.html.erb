@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image uid:</strong>
+  <%= @admin_photo.image_uid %>
+</p>
+<p>
+  <%= image_tag @admin_photo.image.thumb('1200x600#').url if @admin_photo.image_stored? %>
+</p>
+
+<%= link_to 'Edit', edit_admin_photo_path(@admin_photo) %> |
+<%= link_to 'Back', admin_photos_path %>

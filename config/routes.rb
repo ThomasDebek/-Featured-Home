@@ -1,12 +1,9 @@
 Rails.application.routes.draw do
 
 
-
   namespace :admin do
     resources :photos
   end
-
-
 
   get 'photo' => 'photos#show'
   get 'photos' => 'photos#index'
