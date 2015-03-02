@@ -1,9 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Image uid:</strong>
-  <%= @admin_photo.image_uid %>
+  <strong>Name:</strong>
+  <%= @admin_photo.name %>
 </p>
+
 <p>
   <%= image_tag @admin_photo.image.thumb('1200x600#').url if @admin_photo.image_stored? %>
 </p>

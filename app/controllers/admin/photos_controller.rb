@@ -7,9 +7,6 @@ class Admin::PhotosController < ApplicationController
     @admin_photos = Admin::Photo.all
   end
 
-
-
-
   # GET /admin/photos/1
   # GET /admin/photos/1.json
   def show
@@ -72,6 +69,6 @@ class Admin::PhotosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def admin_photo_params
-      params.require(:admin_photo).permit(:image_uid, :image)
+      params.require(:admin_photo).permit(:name, :image_uid, :image)
     end
 end

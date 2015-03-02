@@ -18,7 +18,7 @@ class Admin::PhotosControllerTest < ActionController::TestCase
 
   test "should create admin_photo" do
     assert_difference('Admin::Photo.count') do
-      post :create, admin_photo: { image_uid: @admin_photo.image_uid }
+      post :create, admin_photo: { name: @admin_photo.name }
     end
 
     assert_redirected_to admin_photo_path(assigns(:admin_photo))
@@ -35,7 +35,7 @@ class Admin::PhotosControllerTest < ActionController::TestCase
   end
 
   test "should update admin_photo" do
-    patch :update, id: @admin_photo, admin_photo: { image_uid: @admin_photo.image_uid }
+    patch :update, id: @admin_photo, admin_photo: { name: @admin_photo.name }
     assert_redirected_to admin_photo_path(assigns(:admin_photo))
   end
 
