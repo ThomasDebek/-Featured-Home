@@ -1,22 +1,23 @@
-<h1>Listing photos</h1>
+<h1>Listing admin_photos</h1>
 
 <table>
   <thead>
-    <tr>
-      <th>Image uid</th>
-      <th colspan="3"></th>
-    </tr>
+  <tr>
+    <th>Name</th>
+    <th colspan="3"></th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @photos.each do |photo| %>
+  <% @photos.each do |photo| %>
       <tr>
+        <td><%= photo.name %></td>
         <td><%= link_to(image_tag(photo.image.thumb('64x64!').url, alt: nil), photo) if photo.image_stored? %></td>
         <td><%= link_to 'Show', photo %></td>
+
       </tr>
-    <% end %>
+  <% end %>
   </tbody>
 </table>
 
 <br>
-

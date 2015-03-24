@@ -1,4 +1,4 @@
-json.array!(@photos) do |photo|
-  json.extract! photo, :id, :image_uid
-  json.url photo_url(photo, format: :json)
+json.array!(@admin_photos) do |admin_photo|
+  json.extract! admin_photo, :id, :name
+  json.url admin_photo_url(admin_photo, format: :json)
 end
