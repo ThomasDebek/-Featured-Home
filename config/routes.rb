@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   resources :contacts
 
 
-  get 'photo' => 'photos#show'
+  get 'photos/:id' => 'photos#show', as: :photo    # tu nowa scieżka potrzebna do wywolania tylko samego zdjecia z innego kontrollera
   get 'photos' => 'photos#index'
 
 

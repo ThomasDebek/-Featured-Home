@@ -10,7 +10,6 @@ class Admin::PhotosController < ApplicationController
 
   def new
     @admin_photo = Admin::Photo.new
-    @photo = Admin::Photo.new
   end
 
   def edit
@@ -18,8 +17,6 @@ class Admin::PhotosController < ApplicationController
 
   def create
     @admin_photo = Admin::Photo.new(admin_photo_params)
-    @photo = Photo.new(admin_photo_params)
-
     if @admin_photo.save
       redirect_to @admin_photo, notice: 'Photo was successfully created.'
     else
@@ -29,7 +26,6 @@ class Admin::PhotosController < ApplicationController
 
   def update
     if @admin_photo.update(admin_photo_params)
-       @photo.update(admin_photo_params)
       redirect_to @admin_photo, notice: 'Photo was successfully updated.'
     else
       render :edit
@@ -38,14 +34,12 @@ class Admin::PhotosController < ApplicationController
 
   def destroy
     @admin_photo.destroy
-    @photo.destroy
     redirect_to admin_photos_url, notice: 'Photo was successfully destroyed.'
   end
 
   private
   def set_admin_photo
     @admin_photo = Admin::Photo.find(params[:id])
-    @photo = Admin::Photo.find(params[:id])
   end
 
   def admin_photo_params

@@ -2,11 +2,11 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @admin_photo.name %>
+  <%= @photo.name %>
 </p>
 
 <p>
-  <%= image_tag @admin_photo.image.thumb('1200x600#').url if @admin_photo.image_stored? %>
+  <%= image_tag @photo.image.thumb('1200x600#').url if @photo.image_stored? %>
 </p>
 
 <%= link_to 'Back', photos_path %>
