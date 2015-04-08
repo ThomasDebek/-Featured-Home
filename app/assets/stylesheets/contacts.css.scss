@@ -13,7 +13,7 @@
     height: 1000px;
   }
 
-  background: linear-gradient(#38434F, #677380) repeat scroll 0% 10% transparent;
+  background: linear-gradient( #677380, #38434F) repeat scroll 0% 10% transparent;
 
   .navbar-nav {
     float: right;
@@ -29,7 +29,13 @@
     .contact {
       text-align: center;
     }
+    #notice {
+      color: green;
+      font-size: 17px;
+    }
   }
+
+
 
 
 }

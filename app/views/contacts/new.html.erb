@@ -1,5 +1,14 @@
-<h1>New contact</h1>
+<%= render 'contact_details' %>
 
-<%= render 'form' %>
 
-<%= link_to 'Back', contacts_path %>
+
+<div id="contact">
+  <div class="contact">
+    <h1>Skontaktuj się z nami przez Formularz </h1>
+    <p id="notice"><%= notice %></p>
+    <%= render 'form' %>
+
+  </div>
+</div>
+
+
