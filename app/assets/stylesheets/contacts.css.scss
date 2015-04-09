@@ -30,12 +30,53 @@
       text-align: center;
     }
     #notice {
-      color: green;
+      color: cornflowerblue;
       font-size: 17px;
     }
   }
 
+  .Center_orders {
+    text-align: center;
+    table {
+      margin: auto;
+    }
+    .orderss {
+      .btn, h2{
+        margin-left: 170px;
+        margin-top: 10px;
+      }
+      table {
+        width: 900px;
+        border-collapse: collapse;
+        margin: auto;
+      }
+      th, td {
+        border: none;
+      }
+      th{
+        background-color: #000;
+        color: #e0f8f8;
+      }
+      /* Co drugi wiersz inny kolor */
+      tr:nth-of-type(even){        /*parzyste*/
+        background-color: #F3F3F3;
+      }
+      tr:nth-of-type(odd){         /*nieparzyste*/
+        background-color: #ddd;
+      }
+      /* Przesunmy wartosci */
+      tr:nth-last-child(n+2) td {
+        text-align: center;
+      }
+      /* Dodajmy kolor */
+      td {
+        padding-right: 2px;
+      }
 
+
+    }
+  }
 
 
 }
+

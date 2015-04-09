@@ -1,34 +1,44 @@
 <%= render 'contact_details' %>
 
-<h1>Listing contacts</h1>
+<div class="Center_orders">
+  <div class="orderss">
+    <%= form_tag do %>
+        <fieldset>
+          <legend><h1>Listing contacts</h1></legend>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Surname</th>
-      <th>Phone</th>
-      <th>Email</th>
-      <th>Description</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+          <table>
+            <thead>
+            <tr>
+              <th>Imie</th>
+              <th>Nazwisko</th>
+              <th>Telefon</th>
+              <th>Email</th>
+              <th>Wiadomosc</th>
+              <th colspan="3"></th>
+            </tr>
+            </thead>
 
-  <tbody>
-    <% @contacts.each do |contact| %>
-      <tr>
-        <td><%= contact.name %></td>
-        <td><%= contact.surname %></td>
-        <td><%= contact.phone %></td>
-        <td><%= contact.email %></td>
-        <td><%= contact.description %></td>
-        <td><%= link_to 'Show', contact %></td>
-        <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
-        <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+            <tbody>
+            <% @contacts.each do |contact| %>
+                <tr>
+                  <td><%= contact.name %></td>
+                  <td><%= contact.surname %></td>
+                  <td><%= contact.phone %></td>
+                  <td><%= contact.email %></td>
+                  <td><%= contact.description %></td>
+                  <td><%= link_to 'Pokaż', contact %></td>
+                  <td><%= link_to 'Edytuj', edit_contact_path(contact) %></td>
+                  <td><%= link_to 'Usun', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                </tr>
+            <% end %>
+            </tbody>
+          </table>
+        </fieldset>
     <% end %>
-  </tbody>
-</table>
+  </div>
+
+
+</div>
 
 <br>
 
