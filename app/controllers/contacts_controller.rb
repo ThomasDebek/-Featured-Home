@@ -28,6 +28,7 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
       if @contact.save
+        ContactMailer.welcome(@contact).deliver
         format.html { redirect_to new_contact_path, notice: 'Twoja wiadomość została wysłana pomyślnie. Dziękujemy.' }
         format.json { render :show, status: :created, location: @contact }
       else
