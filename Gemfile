@@ -5,7 +5,7 @@ gem 'bootstrap-sass'
 gem 'dynamic_form'
 gem 'dragonfly', '~> 1.0.7'
 
-
+gem 'sorcery'
 
 
 
