@@ -1,29 +1,37 @@
 Rails.application.routes.draw do
 
 
-
-
-  resources :users
-
   namespace :admin do
     resources :photos
   end
 
-
   resources :contacts
+  resources :users
+  resources :user_sessions
+
 
 
   get 'photos/:id' => 'photos#show', as: :photo    # tu nowa scieżka potrzebna do wywolania tylko samego zdjecia z innego kontrollera
   get 'photos' => 'photos#index'
 
-
-
   get 'o_nas'   => 'static_pages#about_us'
   get 'kontakt' => 'static_pages#contact'
   get 'galeria' => 'static_pages#gallery'
 
+  get 'user_sessions/new'
+  get 'user_sessions/create'
+  get 'user_sessions/destroy'
+
+
   root 'welcome#index'
 
+
+  #root :to => 'users#index'
+
+  #resources :users
+
+  get 'login' => 'user_sessions#new', :as => :login
+  post 'logout' => 'user_sessions#destroy', :as => :logout
 
 
   # The priority is based upon order of creation: first created -> highest priority.
