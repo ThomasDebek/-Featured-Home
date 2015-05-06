@@ -1,3 +1,38 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.users {
+  background: linear-gradient(#38434F, #677380) repeat scroll 0% 0% transparent;
+  height: 1000px;
+
+  .navbar-nav {
+    float: right;
+    margin-right: 30px;
+  }
+
+  .navbar-inverse {
+    background-color: transparent;
+    border-color: #090909;
+  }
+
+  .featurette-heading {
+    margin-top: 40px;
+  }
+
+  #users_new {
+    text-align: center;
+  }
+
+  .foother {
+    margin-top: 400px;
+  }
+
+  #users_edit {
+    text-align: center;
+  }
+
+
+
+}

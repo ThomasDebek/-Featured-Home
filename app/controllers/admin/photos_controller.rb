@@ -1,6 +1,6 @@
 class Admin::PhotosController < ApplicationController
   before_action :set_admin_photo, only: [:show, :edit, :update, :destroy]
-  before_filter :require_login, only: [:show, :edit, :update, :destroy]
+  before_filter :require_login
 
   def index
     @admin_photos = Admin::Photo.all
