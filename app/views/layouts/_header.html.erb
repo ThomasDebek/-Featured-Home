@@ -26,10 +26,11 @@
               <% if current_user %>
                   <li><a <%= link_to 'Edit Profile', edit_user_path(current_user.id) %></a></li>
                   <li><a <%= link_to 'Logout', :logout, method: :post %></a></li>
-                  <!-- <li><a <%= link_to 'Admin Photo', admin_photos_path %></a></li> -->
+                   <li><a <%= link_to 'Admin Photo', admin_photos_path %></a></li>
                   <li><a href="#">Another action</a></li>
                   <li><a href="#">Something else here</a></li>
                   <li><a <%= link_to 'Zamówienia', contacts_path %></a></li>
+
                   <li class="divider"></li>
               <% else %>
                   <li><a <%= link_to "Register", new_user_path %></a></li>
@@ -41,8 +42,9 @@
 
 
               <li class="dropdown-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
+              <li><a <%= link_to 'Galeria', photos_path %></a></li>
+              <li><a <%= link_to 'Kontakt', new_contact_path %></a></li>
+              <li><a <%= link_to 'O nas', o_nas_path %></a></li>
             </ul>
           </li>
         </ul>

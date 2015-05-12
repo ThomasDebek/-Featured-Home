@@ -2,9 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-
-
 .photos {
   width: auto;
   height: 1100px;
@@ -26,5 +23,53 @@
     border-color: #090909;
   }
 
+  #photo {
+    .row {
+      color: #333;
+      margin: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      .col-md-4 {
+        display: inline-block;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+        width: 280px;
+      }
+    }
+  }
+
+  #colors {
+    a {
+      background-color: aqua;
+    }
+  }
+
+  #gallery-1 {
+    margin: auto;
+  }
+  .gallery {
+    letter-spacing: normal;
+  }
+  .gallery {
+    clear: both;
+    margin: 0 auto 18px;
+    overflow: hidden;
+  }
+
+
+
+  .thumbnail_new {
+    #background-color: white;
+    text-align: center;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    display: block;
+    line-height: 1.42857;
+    margin-bottom: 20px;
+    padding: 4px;
+    transition: border 0.2s ease-in-out 0s;
+  }
 
 }

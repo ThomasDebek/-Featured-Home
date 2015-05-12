@@ -1,23 +1,26 @@
-<h1>Listing photos</h1>
+<h1>Galeria</h1>
 
 <table>
-  <thead>
-  <tr>
-    <th>Name</th>
-    <th colspan="3"></th>
-  </tr>
-  </thead>
 
-  <tbody>
-  <% @photos.each do |photo| %>
-      <tr>
-        <td><%= photo.name %></td>
-        <td><%= link_to(image_tag(photo.image.thumb('64x64!').url, alt: nil), photo_path(photo)) if photo.image_stored? %></td> <!-- Tu modyfikacja scieżki z photo na photo_path(photo) -->
-        <td><%= link_to 'Show', photo_path(photo) %></td>
 
-      </tr>
-  <% end %>
-  </tbody>
+  <!-- Pobawmy sie teraz widoczkiem -->
+
+
+  <div id="photo">
+    <table>
+      <% @photos.each do |photo| %>
+          <div class="col-md-4">
+            <div class="thumbnail_new">
+              <%= link_to(image_tag(photo.image.thumb('304x224!').url, alt: nil), photo_path(photo)) if photo.image_stored? %>
+            </div>
+          </div>
+      <% end %>
+    </table>
+
+
+  </div>
+
+
 </table>
 
 <br>
