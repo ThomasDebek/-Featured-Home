@@ -5,7 +5,7 @@
   <%= @photo.name %>
 </p>
 
-<p>
+<p id="center">
   <%= image_tag @photo.image.thumb('x800').url if @photo.image_stored? %>
 </p>
 
