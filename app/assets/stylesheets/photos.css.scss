@@ -77,4 +77,15 @@
     transition: border 0.2s ease-in-out 0s;
   }
 
+  .pagination {
+    .previous_page { background:#677380; color:white }
+    .previous_page.disabled { background: white; color: #777 }
+    .current { background: white }
+    .next_page { background: #677380; color: white }
+    .next_page.disabled { background: white; color: #777 }
+    font-size: 17px;
+  }
+
+
+
 }

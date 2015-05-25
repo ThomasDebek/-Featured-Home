@@ -6,7 +6,7 @@ gem 'dynamic_form'
 gem 'dragonfly', '~> 1.0.7'
 
 gem 'sorcery'
-
+gem 'will_paginate'
 
 
 
