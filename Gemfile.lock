@@ -82,6 +82,8 @@ GEM
     pg (0.15.1)
     polyglot (0.3.5)
     rack (1.5.2)
+    rack-cache (1.2)
+      rack (>= 0.4)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.1.5)
@@ -156,6 +158,7 @@ DEPENDENCIES
   jquery-rails
   mysql2
   pg (= 0.15.1)
+  rack-cache
   rails (= 4.1.5)
   rails_12factor (= 0.0.2)
   sass-rails (~> 4.0.3)
