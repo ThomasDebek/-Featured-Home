@@ -16,17 +16,4 @@
 /tmp
 
 
-.DS_Store
-db/*.sqlite3
-.idea
 
-public/javascripts/all.js
-public/stylesheets/application.css
-public/stylesheets/all.css
-public/system/dragonfly/*
-public/uploads
-tmp/restart.txt
-.rvmrc
-dragonfly.log
-
-.ruby-version

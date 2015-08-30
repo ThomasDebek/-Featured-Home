@@ -1,0 +1,4 @@
+---
+name: hmm-ciekawa-sypialnia-.jpg
+model_class: Admin::Photo
+model_attachment: image
